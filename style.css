@@ -1,0 +1,90 @@
+body{
+    background-image: url("dice_images/background_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hsla(43, 100%, 69%, 0.973);
+    height: 100vh;
+}
+
+#p1{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+
+#container{
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    display: block;
+    border: none;
+    padding: 10px; 
+}
+
+button{
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px hsl(0, 0%, 0%);
+    cursor: pointer;
+    background-color: hsla(0, 26%, 4%, 0.826);
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+button:hover{
+    background-color: hsl(0, 71%, 96%);
+    color: black;
+}
+
+button:active{
+    background-color: hsla(43, 100%, 69%, 0.973);
+    color: black;
+}
+
+input{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+
+}
+
+#diceResult{
+    margin: 25px;
+}
+
+#diceImages img{
+ width: 150px;
+ margin: 20px;
+}
+#result {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: hsl(49, 100%, 49%);
+    }
+    50% {
+        color: hsl(175, 99%, 30%);
+    }
+    100% {
+        color: hsl(0, 100%, 50%);
+    }
+}
